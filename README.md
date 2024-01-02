@@ -1,10 +1,11 @@
 # Hometown_flavours
 Explore Culinary Diversity
-Welcome to [HOMETOWN FLAVOURS] - Where Every State Tells a Culinary Tale!
+<br>
+Welcome to HOMETOWN FLAVOURS - Where Every State Tells a Culinary Tale!
 
 ## Overview
 
-[HOMETOWN_FLAVOURS] is an online platform dedicated to bringing the diverse and unique flavors of every state right to your doorstep. From the savory spices of Hyderabad to the hearty dishes of the Bengal, embark on a gastronomic journey that celebrates the essence of each region.
+HOMETOWN_FLAVOURS is an online platform dedicated to bringing the diverse and unique flavors of every state right to your doorstep. From the savory spices of Hyderabad to the hearty dishes of the Bengal, embark on a gastronomic journey that celebrates the essence of each region.
 
 ## Features
 
