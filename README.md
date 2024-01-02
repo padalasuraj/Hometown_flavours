@@ -18,11 +18,11 @@ Our user-friendly interface makes ordering a breeze. Customize your meals, choos
 
 ### 3. Culinary Diversity
 
-Discover a wide range of cuisines, from Southern comfort food to Pacific Northwest seafood. We strive to bring you the best dishes each state has to offer.
+Discover a wide range of cuisines, from northern comfort food to southern seafood. We strive to bring you the best dishes each state has to offer.
 
 ### 4. Personalized Experience
 
-Tailor your orders to match your taste preferences. Whether you're a fan of spicy Cajun flavors or prefer the simplicity of New England seafood, we've got you covered.
+Tailor your orders to match your taste preferences. Whether you're a fan of spicy flavors or prefer the simplicity, we've got you covered.
 
 ### 5. Timely Deliveries
 
