@@ -23,7 +23,7 @@ HOMETOWN_FLAVOURS is an online platform dedicated to bringing the diverse and un
 
 - **Personalized Experience**
 
-   Tailor your orders to match your taste preferences. Whether you're a fan of spicy flavors or prefer the simplicity, we've got you covered.
+   Tailor your orders to match your taste preferences. Whether you're a fan of spicy flavors or prefer simplicity, we've got you covered.
 
  - **Timely Deliveries**
 
