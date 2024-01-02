@@ -9,23 +9,23 @@ HOMETOWN_FLAVOURS is an online platform dedicated to bringing the diverse and un
 
 ## Features
 
-### 1. State-Centric Menus
+- **State-Centric Menus**
+ 
+  Explore curated menus that capture the essence of each state. Indulge in authentic dishes that showcase the rich culinary heritage of regions across the country.
 
-Explore curated menus that capture the essence of each state. Indulge in authentic dishes that showcase the rich culinary heritage of regions across the country.
+- **Seamless Ordering**
 
-### 2. Seamless Ordering
+   Our user-friendly interface makes ordering a breeze. Customize your meals, choose your preferred state, and place an order effortlessly from the comfort of your home.
 
-Our user-friendly interface makes ordering a breeze. Customize your meals, choose your preferred state, and place an order effortlessly from the comfort of your home.
+- **Culinary Diversity**
 
-### 3. Culinary Diversity
+   Discover a wide range of cuisines, from northern comfort food to southern seafood. We strive to bring you the best dishes each state has to offer
 
-Discover a wide range of cuisines, from northern comfort food to southern seafood. We strive to bring you the best dishes each state has to offer.
+- **Personalized Experience**
 
-### 4. Personalized Experience
+   Tailor your orders to match your taste preferences. Whether you're a fan of spicy flavors or prefer the simplicity, we've got you covered.
 
-Tailor your orders to match your taste preferences. Whether you're a fan of spicy flavors or prefer the simplicity, we've got you covered.
+ - **Timely Deliveries**
 
-### 5. Timely Deliveries
-
-Enjoy timely deliveries that ensure your food arrives fresh and flavorful. We understand the importance of a punctual and delightful dining experience.
+   Enjoy timely deliveries that ensure your food arrives fresh and flavorful. We understand the importance of a punctual and delightful dining experience.
 
