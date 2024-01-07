@@ -1,49 +1,17 @@
-/* fonts  */
-@font-face {
-    font-family:"Raleway-regular";
-    src:url(../fonts/Raleway-Regular.ttf)
-}
-@font-face {
-    font-family:"Raleway-medium";
-    src:url(../fonts/Raleway-Medium.ttf)
-}
-@font-face {
-    font-family:"Raleway-bold";
-    src:url(../fonts/Raleway-Bold.ttf)
-}
-@font-face {
-    font-family:"Raleway-extrabold";
-    src:url(../fonts/Raleway-ExtraBold.ttf)
-}
-@font-face {
-    font-family:"Raleway-semibold";
-    src:url(../fonts/Raleway-SemiBold.ttf)
-}
-@font-face {
-    font-family:"Raleway-black";
-    src:url(../fonts/Raleway-Black.ttf)
-}
 
-
-/* colors  */
 
 :root {
-    --primary:#EEBF00;
-    --secondary:#232B38;
-    --ternary:#6C6C6C;
-    --danger:#FE4545;
-    --pure:#FEFEFE;
-    --light:#F0F0F0;
-    --heaven:#FFFFFF;
-    --footer:#2D333F;
-}
+    --primary:#048715;
+    --secondary:#003d15;
 
 /* Reset  */
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
+
 }
+
 
 body{
     -webkit-font-smoothing:antialiased;
@@ -53,6 +21,7 @@ body{
     width:100%;
     padding:0 15px;
     margin:0 auto;
+    
    
 }
 
@@ -70,7 +39,138 @@ body{
   @media (min-width: 992px) {
     .container {
       max-width: 960px;
+    }:root {
+    --primary: #2e700d;
+    --secondary: #232B38;
+    --light: #000000;
+  
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Raleway-regular";
+}
+
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
     }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1152px;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+
+
+.header {
+    height: 600px;
+    background-image: url(../images/hero.png);
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/* Remove redundant styles... */
+
+section.top-products {
+    background: var(--light);
+}
+
+.section-heading:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-image: url("home/assets/icons/hr.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -40px;
+}
+
+/* Remove redundant styles... */
+
+.top-products .food-slider .food-card .stars img {
+    margin-right: 0.25rem;
+}
+
+
+
+.slick-slide {
+    margin: 0 27px;
+}
+
+.slick-list {
+    margin: 0 -27px;
+}
+
+.top-products .slider-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: var(--primary);
+    border-radius: 100px;
+    cursor: pointer;
+    outline: none;
+}
+
+.prev-btn {
+    position: absolute;
+    top: 46%;
+    left: -3rem;
+    z-index: 1;
+}
+
+.next-btn {
+    position: absolute;
+    top: 46%;
+    right: -3rem;
+    z-index: 1;
+}
+
+
+
   }
   
   @media (min-width: 1200px) {

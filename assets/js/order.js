@@ -1,74 +1,53 @@
-document.addEventListener('DOMContentLoaded', function () {
-    /*===== MENU SHOW =====*/
-    const showMenu = (toggleId, navId) => {
-        const toggle = document.getElementById(toggleId),
-            nav = document.getElementById(navId);
 
-        if (toggle && nav) {
-            toggle.addEventListener('click', () => {
-                nav.classList.toggle('show');
-            });
-        }
-    };
-    showMenu('nav-toggle', 'nav-menu');
+const firebaseConfig = {
+    apiKey: "AIzaSyCo_paGnOg0kOPfNaNfJ_MShuPVknuHkPY",
+    authDomain: "hometownflavours-aa286.firebaseapp.com",
+    databaseURL: "https://hometownflavours-aa286-default-rtdb.firebaseio.com",
+    projectId: "hometownflavours-aa286",
+    storageBucket: "hometownflavours-aa286.appspot.com",
+    messagingSenderId: "572114300263",
+    appId: "1:572114300263:web:d7f362cf9df54cd89a13c2",
+    measurementId: "G-3JRY2XX069"
+  };
 
-    /*==================== REMOVE MENU MOBILE ====================*/
-    const navLink = document.querySelectorAll('.nav__link');
 
-    function linkAction() {
-        const navMenu = document.getElementById('nav-menu');
-        // When we click on each nav__link, we remove the show-menu class
-        navMenu.classList.remove('show');
-    }
-    navLink.forEach(n => n.addEventListener('click', linkAction));
 
-    /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-    const sections = document.querySelectorAll('section[id]');
+firebase.initializeApp(firebaseConfig);
 
-    function scrollActive() {
-        const scrollY = window.pageYOffset;
 
-        sections.forEach(current => {
-            const sectionHeight = current.offsetHeight;
-            const sectionTop = current.offsetTop - 50;
-            sectionId = current.getAttribute('id');
+var contactFormDB = firebase.database().ref("contactForm");
 
-            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-                document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active');
-            } else {
-                document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active');
-            }
-        });
-    }
-    window.addEventListener('scroll', scrollActive);
+document.getElementById("contactForm").addEventListener("submit", submitForm);
 
-    /*===== SCROLL REVEAL ANIMATION =====*/
-    const sr = ScrollReveal({
-        origin: 'top',
-        distance: '60px',
-        duration: 2000,
-        delay: 200,
-        //     reset: true
-    });
+function submitForm(e) {
+  e.preventDefault();
 
-    sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
-    sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img', { delay: 400 });
-    sr.reveal('.home__social-icon', { interval: 200 });
-    sr.reveal('.skills__data, .work__img, .contact__input', { interval: 200 });
+  var name = getElementVal("name");
+  var MobileNumber = getElementVal("MobileNumber");
+  var emailid = getElementVal("emailid");
+  var ItemID = getElementVal("ItemID");
+  var Address = getElementVal("Address");
 
-    /*==================== ORDER BUTTON FUNCTIONALITY ====================*/
-    const orderButton = document.querySelector('.contact__button');
+  saveMessages(name,MobileNumber, emailid, ItemID,Address);
+  document.querySelector(".alert").style.display = "block";
+  setTimeout(() => {
+    document.querySelector(".alert").style.display = "none";
+  }, 3000);
+ document.getElementById("contactForm").reset();
+}
 
-    orderButton.addEventListener('click', function () {
-        // Add your order button logic here
-        // For example, you can collect form data and send it to the server.
+const saveMessages = (name,MobileNumber, emailid, ItemID,Address) => {
+  var newContactForm = contactFormDB.push();
 
-        // Display a message
-        displayMessage('Order placed successfully!');
-    });
+  newContactForm.set({
+    name: name,
+    MobileNumber:MobileNumber,
+    emailid: emailid,
+    ItemID: ItemID,
+    Address: Address,
+  });
+};
 
-    function displayMessage(message) {
-        const messageContainer = document.getElementById('message-container');
-        messageContainer.innerText = message;
-    }
-});
+const getElementVal = (id) => {
+  return document.getElementById(id).value;
+};

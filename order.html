@@ -1,134 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Messages | Firebase</title>
     <link rel="stylesheet" href="assets/css/order.css">
     <style>
-        .contact__input-group {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
+       body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("assets/image/orderbg.jpg"); 
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+ 
+}
 
-        .contact__input-group input {
-            flex: 1;
-        }
-
-        /* Apply the same styling as .contact__button to the Add Item button */
-        #addItemButton {
-            display: block;
-            border: none;
-            outline: none;
-            font-size: var(--normal-font-size);
-            cursor: pointer;
-            margin-left: auto;
-        }
+.section-title {
+  width: 95%;
+  max-width: 700px;
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(235, 101, 5, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.731); 
+  margin-top: 20px; 
+}
     </style>
-    
-    
-    <style>
-    .contact__input-group {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 15px;
-    }
-
-    .contact__input-group input {
-        flex: 1;
-    }
-
-    .contact__container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .contact__form {
-        width: 100%;
-    }
-
-    /* Apply the same styling as .contact__button to the Add Item button */
-    #addItemButton {
-        display: block;
-        border: none;
-        outline: none;
-        font-size: var(--normal-font-size);
-        cursor: pointer;
-        margin-left: auto;
-    }
-</style>
-
 </head>
+
 <body>
 
-    <!--===== CONTACT SECTION =====-->
-    <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
+<!--CONTACT SECTION-->
+      
+       <section class="contact section" id="contact">
+        <h2 class="section-title"> Order </h2>
+    <br>
+    <div class="container">
+        <form action="" id="contactForm">
+            <div class="alert">Order Successful!!!
+            </div>
 
-        <div class="contact__container bd-grid">
-            <form action="assets/css/php/connect.php" class="contact__form" id="orderForm" method="post">
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your name...." />
+            </div>
+            <div class="inputBox">
+                <input type="text" id="MobileNumber" placeholder="MobileNumber" />
+            </div>
 
-                <!-- Personal Information -->
-                <input type="text" placeholder="Name" class="contact__input" name="Name">
-                <input type="text" placeholder="Mobile Number" class="contact__input" name="Mobile_Number">
-                <input type="email" placeholder="Email" class="contact__input" name="Email">
-            
-                <!-- Item Sections -->
-                <div id="itemSections">
-                    <div class="contact__input-group">
-                        <input type="text" placeholder="Item ID" class="contact__input" name="Item_ID">
-                        <input type="number" placeholder="Quantity" class="contact__input" id="quantityInput" name="Quantity">
-                    </div>
-                </div>
-            
-                <!-- Add Item Button -->
-                <button type="button" id="addItemButton">Add Item</button>
-            
-                <!-- Address -->
-                <textarea name="ADDRESS" placeholder="ADDRESS" id="addressInput" cols="0" rows="10" class="contact__input"></textarea>
-            
-                <!-- ORDER Button -->
-                <input type="submit" value="ORDER" class="contact__button button">
-            
-                <!-- Message Container -->
-                <div id="message-container"></div>
-            </form>
-            
-        </div>
-    </section>
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Email" />
+            </div>
 
-    <!-- SCRIPTS -->
+            <div class="inputBox">
+                <textarea id="ItemID" cols="30" rows="10" placeholder="ItemID - Quantity"></textarea>
+            </div>
+            <div class="inputBox">
+                <textarea id="Address" cols="30" rows="10" placeholder="Address"></textarea>
+            </div>
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="assets/js/order.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const addItemButton = document.getElementById('addItemButton');
-            const itemSectionsContainer = document.getElementById('itemSections');
-            
-            addItemButton.addEventListener('click', function () {
-                // Create a new item section
-                const newItemSection = document.createElement('div');
-                newItemSection.className = 'contact__input-group';
-
-                // Create input fields for the new item section
-                const newItemIdInput = document.createElement('input');
-                newItemIdInput.type = 'text';
-                newItemIdInput.placeholder = 'Item ID';
-                newItemIdInput.className = 'contact__input';
-
-                const newQuantityInput = document.createElement('input');
-                newQuantityInput.type = 'number';
-                newQuantityInput.placeholder = 'Quantity';
-                newQuantityInput.className = 'contact__input';
-
-                // Append input fields to the new item section
-                newItemSection.appendChild(newItemIdInput);
-                newItemSection.appendChild(newQuantityInput);
-
-                // Append the new item section to the container
-                itemSectionsContainer.appendChild(newItemSection);
-            });
-        });
-    </script>
 </body>
+
 </html>
