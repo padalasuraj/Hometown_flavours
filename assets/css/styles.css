@@ -1,13 +1,13 @@
-/*===== GOOGLE FONTS =====*/
+/*GOOGLE FONTS*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 
-/*===== VARIABLES CSS =====*/
+/*VARIABLES CSS*/
 :root {
   --header-height: 3rem;
 
-  /*========== Colors ==========*/
-  --first-color: #069C54;
+  /* Colors */
+  --first-color: #938805;
   --first-color-alt: #048654;
   --title-color: #393939;
   --text-color: #707070;
@@ -15,7 +15,7 @@
   --body-color: #FBFEFD;
   --container-color: #FFFFFF;
 
-  /*========== Font and typography ==========*/
+  /*Font and typography*/
   --body-font: 'Poppins', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
@@ -25,11 +25,11 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
+  /*Font weight*/
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== Margenes ==========*/
+  /*Margenes*/
   --mb-1: .5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
@@ -37,7 +37,7 @@
   --mb-5: 2.5rem;
   --mb-6: 3rem;
 
-  /*========== z index ==========*/
+  /* index */
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -54,7 +54,7 @@
   }
 }
 
-/*========== BASE ==========*/
+/*BASE*/
 *,::before,::after{
   box-sizing: border-box;
 }
@@ -63,7 +63,7 @@ html{
   scroll-behavior: smooth;
 }
 
-/*========== Variables Dark theme ==========*/
+/*Variables Dark theme*/
 body.dark-theme{
   --title-color: #F1F3F2;
   --text-color: #C7D1CC;
@@ -71,7 +71,7 @@ body.dark-theme{
   --container-color: #27302C;
 }
 
-/*========== Button Dark/Light ==========*/
+/*Button Dark/Light*/
 .change-theme{
   position: absolute;
   right: 1rem;
@@ -108,7 +108,7 @@ img{
   height: auto;
 }
 
-/*========== CLASS CSS ==========*/
+/*CLASS CSS*/
 .section{
   padding: 4rem 0 2rem;
 }
@@ -130,7 +130,7 @@ img{
   margin-bottom: var(--mb-1);
 }
 
-/*========== LAYOUT ==========*/
+/*LAYOUT*/
 .bd-container{
   max-width: 960px;
   width: calc(100% - 2rem);
@@ -152,7 +152,7 @@ img{
   background-color: var(--body-color);
 }
 
-/*========== NAV ==========*/
+/*NAV*/
 .nav{
   max-width: 1024px;
   height: var(--header-height);
@@ -517,7 +517,7 @@ img{
   }
 
   .home__container{
-    height: 100vh;
+    height: 200vh;
     justify-items: center;
   }
 
