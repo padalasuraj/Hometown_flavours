@@ -31,3 +31,6 @@ HOMETOWN_FLAVOURS is an online platform dedicated to bringing the diverse and un
 
 ![home](https://github.com/padalasuraj/Hometown_flavours/assets/108484886/7e4af134-e4b3-4492-8d51-e3c145991993)
 
+
+![menu](https://github.com/padalasuraj/Hometown_flavours/assets/108484886/4705be80-8520-421c-afc8-fd79265dc0d7)
+
