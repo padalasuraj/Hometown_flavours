@@ -29,3 +29,5 @@ HOMETOWN_FLAVOURS is an online platform dedicated to bringing the diverse and un
 
    Enjoy timely deliveries that ensure your food arrives fresh and flavorful. We understand the importance of a punctual and delightful dining experience.
 
+![home](https://github.com/padalasuraj/Hometown_flavours/assets/108484886/7e4af134-e4b3-4492-8d51-e3c145991993)
+
